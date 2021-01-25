@@ -5,7 +5,7 @@ import Experiences from "../components/Experiences"
 
 const ExperiencesPage = () => (
   <Layout>
-    <SEO title="Projects" />
+    <SEO title="Experiences" />
 
     <Experiences/>
   </Layout>

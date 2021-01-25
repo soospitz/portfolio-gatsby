@@ -7,7 +7,7 @@ import Video from "../assets/videos/mockup.mp4"
 const lobo = () => {
   return (
     <Layout>
-      <SEO title="Motion" />
+      <SEO title="Lobo" />
       <LoboContainer>
         <Heading>Lobo Mockup</Heading>
         <VideoContainer

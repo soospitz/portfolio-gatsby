@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import styled from "styled-components"
 import { BiCoffeeTogo } from "react-icons/bi"
 import { FaHeart } from "react-icons/fa"
