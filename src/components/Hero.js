@@ -1,6 +1,9 @@
 import React, { useEffect } from "react"
 import styled from "styled-components"
-import { Button } from "./Button"
+import { GoMarkGithub } from "react-icons/go"
+import { SiLinkedin } from "react-icons/si"
+import { HiOutlineMailOpen } from "react-icons/hi"
+import { Link } from "gatsby"
 import Aos from "aos"
 import "aos/dist/aos.css"
 
@@ -8,6 +11,30 @@ const Hero = () => {
   useEffect(() => {
     Aos.init({})
   }, [])
+  const ButtonMailto = ({ mailto }) => {
+    return (
+      <Link
+        to="mailto:soospitz@gmail.com"
+        onClick={e => {
+          window.location = mailto
+          e.preventDefault()
+        }}
+      >
+        <HiOutlineMailOpen
+          css={`
+            font-size: 3.5rem;
+            margin: 1rem;
+            color: #fff;
+            &:hover {
+              color: #96d1ea;
+              transform: translateY(-2px);
+              cursor: pointer;
+            }
+          `}
+        />
+      </Link>
+    )
+  }
 
   return (
     <HeroContainer>
@@ -20,24 +47,51 @@ const Hero = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="50"
-          >
+          >Hi, I'm Soo
           </HeroH1>
           
           <HeroP
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="200"
-          >Out of this world</HeroP>
-          <Button
-            primary="true"
-            big="true"
-            round="true"
+          >Welcome to my Portfolio!</HeroP>
+          <ContactIcons
             data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="350"
+            data-aos-duration="1200"
+            data-aos-delay="50"
           >
-            Travel Now
-          </Button>
+            <ButtonMailto
+              label="Write me an E-Mail"
+              mailto="mailto:soospitz@gmail.com"
+            />
+
+            <Link to="https://www.linkedin.com/in/soospitz/">
+              <SiLinkedin
+                css={`
+                  margin: 1rem;
+                  color: #fff;
+                  &:hover {
+                    color: #96d1ea;
+                    transform: translateY(-2px);
+                    cursor: pointer;
+                  }
+                `}
+              />
+            </Link>
+            <Link to="https://github.com/soospitz">
+              <GoMarkGithub
+                css={`
+                  margin: 1rem;
+                  color: #fff;
+                  &:hover {
+                    color: #96d1ea;
+                    transform: translateY(-2px);
+                    cursor: pointer;
+                  }
+                `}
+              />
+            </Link>
+          </ContactIcons>
         </HeroItems>
       </HeroContent>
     </HeroContainer>
@@ -101,4 +155,7 @@ const HeroP = styled.p`
   font-size: clamp(1rem, 3vw, 3rem);
   margin-bottom: 2rem;
   font-weight: 400;
+`
+const ContactIcons = styled.div`
+  font-size: 3rem;
 `

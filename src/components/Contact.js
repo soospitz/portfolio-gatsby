@@ -8,10 +8,34 @@ import { Link } from "gatsby"
 import Aos from "aos"
 import "aos/dist/aos.css"
 
-const Contact = () => {
+const Contact = ({name}) => {
   useEffect(() => {
     Aos.init({})
   }, [])
+  const ButtonMailto = ({ mailto }) => {
+    return (
+      <Link
+        to="mailto:soospitz@gmail.com"
+        onClick={e => {
+          window.location = mailto
+          e.preventDefault()
+        }}
+      >
+        <HiOutlineMailOpen
+          css={`
+            font-size: 3.5rem;
+            margin: 1rem;
+            color: #fff;
+            &:hover {
+              color: #96d1ea;
+              transform: translateY(-2px);
+              cursor: pointer;
+            }
+          `}
+        />
+      </Link>
+    )
+  }
 
   return (
     <ContactContainer>
@@ -28,44 +52,55 @@ const Contact = () => {
             data-aos-duration="1000"
             data-aos-delay="50"
           >
-            <HiOutlineMailOpen
-              css={`
-                font-size: 3.5rem;
-                margin: 1rem;
-                &:hover {
-                  color: #96d1ea;
-                  transform: translateY(-2px);
-                  cursor: pointer;
-                }
-              `}
+            <ButtonMailto
+              label="Write me an E-Mail"
+              mailto="mailto:soospitz@gmail.com"
             />
-            <SiLinkedin
-              css={`
-                margin: 1rem;
-                &:hover {
-                  color: #96d1ea;
-                  transform: translateY(-2px);
-                  cursor: pointer;
-                }
-              `}
-            />
-            <GoMarkGithub
-              css={`
-                margin: 1rem;
-                &:hover {
-                  color: #96d1ea;
-                  transform: translateY(-2px);
-                  cursor: pointer;
-                }
-              `}
-            />
+
+            <Link to="https://www.linkedin.com/in/soospitz/">
+              <SiLinkedin
+                css={`
+                  margin: 1rem;
+                  color: #fff;
+                  &:hover {
+                    color: #96d1ea;
+                    transform: translateY(-2px);
+                    cursor: pointer;
+                  }
+                `}
+              />
+            </Link>
+            <Link to="https://github.com/soospitz">
+              <GoMarkGithub
+                css={`
+                  margin: 1rem;
+                  color: #fff;
+                  &:hover {
+                    color: #96d1ea;
+                    transform: translateY(-2px);
+                    cursor: pointer;
+                  }
+                `}
+              />
+            </Link>
           </ContactIcons>
         </ColumnOne>
-        <ColumnTwo>
-          <Form data-aos="fade-left" data-aos-duration="1000"
-            data-aos-delay="50">
-            <form method="post" action="#">
-              <div class="field">
+        {/* <ColumnTwo>
+          <Form
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="50"
+          >
+            <form
+              method="post"
+              netlify-honeypot="bot-field"
+              data-netlify="true"
+              name={name}
+            >
+              <input type="hidden" name="bot-field" />
+              <input type="hidden" name="form-name" value={name} />
+
+              <div className="field">
                 <label>
                   Name
                   <Input>
@@ -73,7 +108,7 @@ const Contact = () => {
                   </Input>
                 </label>
               </div>
-              <div class="field">
+              <div className="field">
                 <label>
                   Email
                   <Input>
@@ -81,7 +116,7 @@ const Contact = () => {
                   </Input>
                 </label>
               </div>
-              <div class="field">
+              <div className="field">
                 <label>
                   Subject
                   <Input>
@@ -89,7 +124,7 @@ const Contact = () => {
                   </Input>
                 </label>
               </div>
-              <div class="field">
+              <div className="field">
                 <label>
                   Message
                   <Message>
@@ -105,7 +140,7 @@ const Contact = () => {
               </ButtonContainer>
             </form>
           </Form>
-        </ColumnTwo>
+        </ColumnTwo> */}
       </ContactContent>
     </ContactContainer>
   )
@@ -123,28 +158,23 @@ const ContactContainer = styled.div`
   background-color: #161616;
 `
 const ContactContent = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  
   padding: 0 2rem;
 
-  @media screen and (max-width: 868px) {
-    grid-template-columns: 1fr;
-  }
+  
 `
 const ColumnOne = styled.div`
-  width: 70%;
-
+  width: 100%;
+  text-align: center;
   h1 {
-    text-align: start;
-    font-weight: normal; 
-    padding-left: 2rem;
+    text-align: center;
+    font-weight: normal;
     margin-bottom: 4rem;
     font-size: clamp(1.5rem, 5vw, 2rem);
   }
   p {
     color: #c6c6c6;
     font-size: 1rem;
-    padding-left: 4rem;
     margin-bottom: 0.75em;
   }
   @media screen and (max-width: 868px) {
@@ -154,74 +184,72 @@ const ColumnOne = styled.div`
 
 const ContactIcons = styled.div`
   font-size: 3rem;
-  padding-left: 4rem;
   margin: 4rem 0;
 `
 
-const ColumnTwo = styled.div`
-  width: 70%;
-  margin: 4rem 2rem 2rem 2rem;
-  @media screen and (max-width: 868px) {
-    width: 100%;
-    
-  }
-`
-const Form = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 4rem;
+// const ColumnTwo = styled.div`
+//   width: 70%;
+//   margin: 4rem 2rem 2rem 2rem;
+//   @media screen and (max-width: 868px) {
+//     width: 100%;
+//   }
+// `
+// const Form = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   margin-bottom: 5rem;
 
-  label,
-  input {
-    transition: all 0.2s;
-    touch-action: manipulation;
-  }
-  .field {
-    display: block;
-    flex-flow: column-reverse;
-    margin-bottom: 1em;
-  }
-  input {
-    width: 350px;
-    font-size: 1.5em;
-    border: 0;
-    border-bottom: 1px solid #ccc;
-    background-color: #161616;
-    border-radius: 0;
-    padding: 0;
-    cursor: text;
-    color: #fff;
-  }
-  label {
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-  textarea {
-    display: block;
-    width: 350px;
-    border: 1px solid #ccc;
-    background-color: #161616;
-    border-radius: 0;
-    padding: 0;
-    cursor: text;
-    color: #fff;
-  }
+//   label,
+//   input {
+//     transition: all 0.2s;
+//     touch-action: manipulation;
+//   }
+//   .field {
+//     display: block;
+//     flex-flow: column-reverse;
+//     margin-bottom: 1em;
+//   }
+//   input {
+//     width: 350px;
+//     font-size: 1.5em;
+//     border: 0;
+//     border-bottom: 1px solid #ccc;
+//     background-color: #161616;
+//     border-radius: 0;
+//     padding: 0;
+//     cursor: text;
+//     color: #fff;
+//   }
+//   label {
+//     text-transform: uppercase;
+//     letter-spacing: 0.05em;
+//   }
+//   textarea {
+//     display: block;
+//     width: 350px;
+//     border: 1px solid #ccc;
+//     background-color: #161616;
+//     border-radius: 0;
+//     padding: 0;
+//     cursor: text;
+//     color: #fff;
+//   }
 
-  input:focus {
-    outline: 0;
-    border-bottom: 2px solid #666;
-  }
-`
-const Message = styled.div`
-  display: block;
-  padding-top: 1rem;
-`
-const Input = styled.div`
-  display: block;
-`
-const ButtonContainer = styled.div`
-  margin-top: 2rem;
-`
+//   input:focus {
+//     outline: 0;
+//     border-bottom: 2px solid #666;
+//   }
+// `
+// const Message = styled.div`
+//   display: block;
+//   padding-top: 1rem;
+// `
+// const Input = styled.div`
+//   display: block;
+// `
+// const ButtonContainer = styled.div`
+//   margin-top: 2rem;
+// `
 const ContactButton = styled(Link)`
   background: #161616;
   white-space: nowrap;
@@ -241,5 +269,8 @@ const ContactButton = styled(Link)`
     background: #96d1ea;
     color: #161616;
     transform: translateY(-2px);
+  }
+  a {
+    color: #fff;
   }
 `

@@ -4,7 +4,7 @@
         "alt": "covid",
         "title": "COVID-19 Tracker",
         "sub": "COVID Tracker App using React",
-        "desc": "• Built an app that allows users to search countries and displays data with graphs and charts • Integrated with COVID-19 API to render data using Chart.js and Material-UI",
+        "desc": "• Built an app that allows users to search countries and displays data with graphs and charts  • Integrated with COVID-19 API to render data using Chart.js and Material-UI",
         "button1": "Live Website",
         "button1link": "https://soospitz.github.io/covid-tracker/",
         "button2": "Codes",
@@ -26,7 +26,7 @@
         "alt": "PM Shop",
         "title": "PM Shop",
         "sub": "Online Shopping App using React",
-        "desc": "• Website that allows user to browse products and add to cart • Features filterable list of products, add and remove items from cart, responsive design, Hooks, and dynamic routing using React-Router",
+        "desc": "• Website that allows user to browse products and add to cart  • Features filterable list of products, add and remove items from cart, responsive design, Hooks, and dynamic routing using React-Router",
         "button1": "Live Website",
         "button1link": "https://soospitz.github.io/shopping-app/#/",
         "button2": "Codes",
@@ -48,9 +48,9 @@
         "alt": "JUMPEACH",
         "title": "JUMPEACH",
         "sub": "COVID Tracker App using React",
-        "desc": "• Built an app that allows users to search countries and displays data with graphs and charts • Integrated with COVID-19 API to render data using Chart.js and Material-UI",
+        "desc": "• Built an app that allows users to search countries and displays data with graphs and charts  • Integrated with COVID-19 API to render data using Chart.js and Material-UI",
         "button1": "Play",
-        "button1link": "https://soospitz.github.io/jumpeach/",
+        "button1link": "../jumpeach",
         "button2": "Codes",
         "button2link": "https://github.com/soospitz/jumpeach/"
     },
@@ -68,7 +68,7 @@
         "alt": "Life Calculator",
         "title": "Life Calculator",
         "sub": "iOS application made with Swift",
-        "desc": "• This iOS app allows users to plan and rate their goals in customizable categories • Integrated Core Data for user data and used animation and graphics for UI",
+        "desc": "• This iOS app allows users to plan and rate their goals in customizable categories  • Integrated Core Data for user data and used animation and graphics for UI",
         "button1": "Codes",
         "button1link": "https://github.com/soospitz/LifeCalculator/"
     },
@@ -78,8 +78,8 @@
         "title": "LOBO",
         "sub": "Mockup using Adobe XD",
         "desc": "• An interactive mobile application mockup using Adobe XD which allowed users to easily access and navigate global database of Marriott’s architectural designs",
-        "button1": "Live Website",
-        "button2": "Codes"
+        "button1": "Video",
+        "button1link": "../lobo"
     },
     {
         "img": "../assets/images/1996.png",
@@ -88,6 +88,6 @@
         "sub": "Short personal animation project made with Adobe After Effects",
         "desc": "",
         "button1": "Video",
-        "button1link": "https://github.com/soospitz/LifeCalculator/"
+        "button1link": "../motionGraphic"
     }
 ]

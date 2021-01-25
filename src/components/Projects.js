@@ -123,9 +123,11 @@ const ProjectWrapper = styled.div`
 
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
+    margin: 2rem;
   }
   @media screen and (max-width: 868px) {
     grid-template-columns: 1fr;
+    margin: 2rem;
   }
 `
 const ProjectCard = styled.div`
