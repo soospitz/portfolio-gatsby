@@ -3,7 +3,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
 import { Button } from "../components/Button"
-import { BsCloudFill } from "react-icons/Bs"
 
 const jumpeach = () => {
   return (
@@ -33,33 +32,13 @@ const jumpeach = () => {
               </h4>
               <p>
                 Play the game on the left! <br />
-                Reach the{" "}
-                <BsCloudFill
-                  css={`
-                    color: green;
-                  `}
-                />{" "}
-                to win <br />
-                Jump on the
-                <BsCloudFill
-                  css={`
-                    color: grey;
-                  `}
-                />{" "}
-                for boost <br />
-                Watch out for the{" "}
-                <BsCloudFill
-                  css={`
-                    color: pink;
-                  `}
-                />
+                Reach the Green Cloud to win <br />
+                Jump on the Grey Cloud for boost <br />
+                Watch out for the Pink Cloud
               </p>
-              <Button
-              to="https://github.com/soospitz/JUMPEACH/"
-              primary="true"
-            >
-              Code
-            </Button>
+              <Button to="https://github.com/soospitz/JUMPEACH/" primary="true">
+                Code
+              </Button>
             </div>
           </InstructionContainer>
         </GridContainer>
