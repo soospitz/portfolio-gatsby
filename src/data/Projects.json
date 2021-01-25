@@ -1,0 +1,93 @@
+[
+    {
+        "img": "../assets/images/covid.png",
+        "alt": "covid",
+        "title": "COVID-19 Tracker",
+        "sub": "COVID Tracker App using React",
+        "desc": "• Built an app that allows users to search countries and displays data with graphs and charts • Integrated with COVID-19 API to render data using Chart.js and Material-UI",
+        "button1": "Live Website",
+        "button1link": "https://soospitz.github.io/covid-tracker/",
+        "button2": "Codes",
+        "button2link": "https://github.com/soospitz/covid-tracker/"
+    },
+    {
+        "img": "../assets/images/subway.png",
+        "alt": "NYC Subway",
+        "title": "NYC Subway",
+        "sub": "Subway Schedule App using React",
+        "desc": "• Developed an app that allows users to search and display NYC Subway arrival times by integrating with 3rd-party wrapper around MTA API and Moment.js",
+        "button1": "Live Website",
+        "button1link": "https://soospitz.github.io/subway/",
+        "button2": "Codes",
+        "button2link": "https://github.com/soospitz/subway/"
+    },
+    {
+        "img": "../assets/images/pm.png",
+        "alt": "PM Shop",
+        "title": "PM Shop",
+        "sub": "Online Shopping App using React",
+        "desc": "• Website that allows user to browse products and add to cart • Features filterable list of products, add and remove items from cart, responsive design, Hooks, and dynamic routing using React-Router",
+        "button1": "Live Website",
+        "button1link": "https://soospitz.github.io/shopping-app/#/",
+        "button2": "Codes",
+        "button2link": "https://github.com/soospitz/shopping-app/"
+    },
+    {
+        "img": "../assets/images/weather.png",
+        "alt": "Weather App",
+        "title": "Weather App",
+        "sub": "Weather App using React",
+        "desc": "• Built a weather app that allows users to search by City or Zip Code and display data using a weather API",
+        "button1": "Live Website",
+        "button1link": "https://soospitz.github.io/weather/",
+        "button2": "Codes",
+        "button2link": "https://github.com/soospitz/weather/"
+    },
+    {
+        "img": "../assets/images/jumpeach.png",
+        "alt": "JUMPEACH",
+        "title": "JUMPEACH",
+        "sub": "COVID Tracker App using React",
+        "desc": "• Built an app that allows users to search countries and displays data with graphs and charts • Integrated with COVID-19 API to render data using Chart.js and Material-UI",
+        "button1": "Play",
+        "button1link": "https://soospitz.github.io/jumpeach/",
+        "button2": "Codes",
+        "button2link": "https://github.com/soospitz/jumpeach/"
+    },
+    {
+        "img": "../assets/images/haven.png",
+        "alt": "Haven",
+        "title": "Haven",
+        "sub": "Networking Platform using React",
+        "desc": "• Platform for artists and performers to showcase their talents and find clients based on their local availability and collaborate (artists, photographers etc.)",
+        "button1": "Codes",
+        "button1link": "https://github.com/nyu-software-engineering/fall-2019-music-suggestions"
+    },
+    {
+        "img": "../assets/images/iOS.png",
+        "alt": "Life Calculator",
+        "title": "Life Calculator",
+        "sub": "iOS application made with Swift",
+        "desc": "• This iOS app allows users to plan and rate their goals in customizable categories • Integrated Core Data for user data and used animation and graphics for UI",
+        "button1": "Codes",
+        "button1link": "https://github.com/soospitz/LifeCalculator/"
+    },
+    {
+        "img": "../assets/images/lobo.png",
+        "alt": "LOBO",
+        "title": "LOBO",
+        "sub": "Mockup using Adobe XD",
+        "desc": "• An interactive mobile application mockup using Adobe XD which allowed users to easily access and navigate global database of Marriott’s architectural designs",
+        "button1": "Live Website",
+        "button2": "Codes"
+    },
+    {
+        "img": "../assets/images/1996.png",
+        "alt": "Motion Graphics Project",
+        "title": "Motion Graphics Project",
+        "sub": "Short personal animation project made with Adobe After Effects",
+        "desc": "",
+        "button1": "Video",
+        "button1link": "https://github.com/soospitz/LifeCalculator/"
+    }
+]

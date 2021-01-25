@@ -1,0 +1,42 @@
+[
+    {
+        "img": "../assets/images/gallatin.png",
+        "alt": "gallatin",
+        "years": "2020",
+        "company": "Gallatin",
+        "title": "Web Developer",
+        "description": "• Performed refactoring of webpage styles using CSS preprocessors (LESS/SASS) through multiple test and deploy iterations resulting in a 40% reduction in size"
+    },
+    {
+        "img": "../assets/images/marriott.png",
+        "alt": "marriott",
+        "years": "2019",
+        "company": "Marriott International",
+        "title": "UX/UI Research Intern",
+        "description": "• Built an interactive mobile application mockup using Adobe XD by conducting usability testing through weekly presentations and trial runs with cross-functional team"
+    },
+    {
+        "img": "../assets/images/nyuit.png",
+        "alt": "NYU IT",
+        "years": "2018-2019",
+        "company": "NYU IT",
+        "title": "Business Analyst & Tester",
+        "description": "• Created wireframes and user flows for surveys and articles using Sketch and Adobe Illustrator and created test plans and conducted manual testing to ensure quality of newly built features"
+    },
+    {
+        "img": "../assets/images/genuine.png",
+        "alt": "genuine",
+        "years": "2016-2018",
+        "company": "Genuine: The Real People Company",
+        "title": "Casting Assistant",
+        "description": "• Create and maintain the company’s database and recruit real people for current and future casting projects"
+    },
+    {
+        "img": "../assets/images/selldorf.png",
+        "alt": "selldorf",
+        "years": "2015-2016",
+        "company": "Selldorf Architects",
+        "title": "Interior Design Intern",
+        "description": "• Increased productivity by reorganizing the Interiors sample library and coordinated in returning fabric samples to 50+ showrooms in NYC"
+    }
+]
