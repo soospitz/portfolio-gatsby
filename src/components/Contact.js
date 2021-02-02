@@ -8,7 +8,7 @@ import { Link } from "gatsby"
 import Aos from "aos"
 import "aos/dist/aos.css"
 
-const Contact = ({name}) => {
+const Contact = ({ name }) => {
   useEffect(() => {
     Aos.init({})
   }, [])
@@ -38,7 +38,7 @@ const Contact = ({name}) => {
   }
 
   return (
-    <ContactContainer>
+    <ContactContainer id="contact">
       <ContactContent>
         <ColumnOne>
           <h1 data-aos="fade-down" data-aos-duration="1200" data-aos-delay="50">
@@ -152,16 +152,16 @@ const ContactContainer = styled.div`
   width: 100%;
   height: 100%;
   justify-content: center;
-  padding: 5rem calc((100vw - 1300px) / 2);
+  padding: 4rem calc((100vw - 1300px) / 2);
+  padding-bottom: 2rem;
+  
   color: #fff;
   align-items: center;
   background-color: #161616;
 `
 const ContactContent = styled.div`
-  
   padding: 0 2rem;
-
-  
+  padding-top: 5rem;
 `
 const ColumnOne = styled.div`
   width: 100%;
@@ -250,27 +250,27 @@ const ContactIcons = styled.div`
 // const ButtonContainer = styled.div`
 //   margin-top: 2rem;
 // `
-const ContactButton = styled(Link)`
-  background: #161616;
-  white-space: nowrap;
-  padding: 10px 32px;
-  color: #fff;
-  font-size: 16px;
-  outline: none;
-  border: 2px solid #96d1ea;
-  margin-right: 1rem;
-  min-width: 100px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: 0.3s !important;
-  border-radius: 10px;
+// const ContactButton = styled(Link)`
+//   background: #161616;
+//   white-space: nowrap;
+//   padding: 10px 32px;
+//   color: #fff;
+//   font-size: 16px;
+//   outline: none;
+//   border: 2px solid #96d1ea;
+//   margin-right: 1rem;
+//   min-width: 100px;
+//   cursor: pointer;
+//   text-decoration: none;
+//   transition: 0.3s !important;
+//   border-radius: 10px;
 
-  &:hover {
-    background: #96d1ea;
-    color: #161616;
-    transform: translateY(-2px);
-  }
-  a {
-    color: #fff;
-  }
-`
+//   &:hover {
+//     background: #96d1ea;
+//     color: #161616;
+//     transform: translateY(-2px);
+//   }
+//   a {
+//     color: #fff;
+//   }
+// `

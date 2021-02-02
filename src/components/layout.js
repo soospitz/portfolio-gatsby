@@ -1,26 +1,26 @@
-import React, { useState } from "react"
-import Header from "./Header"
-import Dropdown from "./Dropdown"
-import Footer from "./Footer"
-import { GlobalStyle } from "./styles/GlobalStyles"
+// import React, { useState } from "react"
+// import Header from "./Header"
+// import Dropdown from "./Dropdown"
+// import Footer from "./Footer"
+// import { GlobalStyle } from "./styles/GlobalStyles"
 
-const Layout = ({ children }) => {
-  const [isOpen, setIsOpen] = useState(false)
+// const Layout = ({ children }) => {
+//   const [isOpen, setIsOpen] = useState(false)
 
-  const toggle = () => {
-    setIsOpen(!isOpen)
-  }
+//   const toggle = () => {
+//     setIsOpen(!isOpen)
+//   }
 
-  return (
-    <>
-      <GlobalStyle />
-      <Dropdown isOpen={isOpen} toggle={toggle}/>
-      <Header toggle={toggle}/>
+//   return (
+//     <>
+//       <GlobalStyle />
+//       <Dropdown isOpen={isOpen} toggle={toggle}/>
+//       <Header toggle={toggle}/>
 
-      <main>{children}</main>
-      <Footer />
-    </>
-  )
-}
+//       <main>{children}</main>
+//       <Footer />
+//     </>
+//   )
+// }
 
-export default Layout
+// export default Layout

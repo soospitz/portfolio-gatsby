@@ -1,0 +1,18 @@
+[
+    {
+        "img": "../assets/images/outer1.png",
+        "alt": "outer"
+    },
+    {
+        "img": "../assets/images/outer2.png",
+        "alt": "outer"
+    },
+    {
+        "img": "../assets/images/outer3.png",
+        "alt": "outer"
+    },
+    {
+        "img": "../assets/images/inner.png",
+        "alt": "inner"
+    }
+]

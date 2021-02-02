@@ -10,7 +10,7 @@ const Skills = () => {
     Aos.init({})
   }, [])
   return (
-    <SkillsContainer>
+    <SkillsContainer id="skills">
       <Heading
         data-aos="fade-down"
         data-aos-duration="1200"
