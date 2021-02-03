@@ -1,6 +1,7 @@
 import React, { useEffect } from "react"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 import Img from "gatsby-image"
 import Aos from "aos"
 import "aos/dist/aos.css"
@@ -56,19 +57,22 @@ const Projects = () => {
             <ProjectSub>{item.node.sub}</ProjectSub>
             <ProjectDescription>{item.node.desc}</ProjectDescription>
             <ButtonWrap>
-              <Buttons
-                to={item.node.button1link}
-                css={`position: absolute; top: 280px; font-size 14px;`}
-              >
-                {item.node.button1}
-              </Buttons>
+              <Link to={item.node.button1link}>
+                <Buttons
+                  to={item.node.button1link}
+                  css={`position: absolute; top: 280px; font-size 14px;`}
+                >
+                  {item.node.button1}
+                </Buttons>
+              </Link>
               {item.node.button2 !== null ? (
+                <Link to={item.node.button2link}>
                 <Buttons
                   to={item.node.button2link}
                   css={`position: absolute; top: 280px; left: 195px; font-size 14px;`}
                 >
                   {item.node.button2}
-                </Buttons>
+                </Buttons></Link>
               ) : null}
             </ButtonWrap>
           </ProjectInfo>
@@ -126,7 +130,7 @@ const ProjectWrapper = styled.div`
   }
 `
 const ProjectCard = styled.div`
-z-index: 90;
+  z-index: 90;
   line-height: 1.5;
   width: 100%;
   height: 450px;

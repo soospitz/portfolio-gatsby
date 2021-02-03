@@ -1,15 +1,36 @@
 import React from "react"
-import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
+import Footer from "../components/Footer"
+import { GlobalStyle } from "../components/styles/GlobalStyles"
 import { Button } from "../components/Button"
+import { IoIosArrowBack } from "react-icons/io"
+import { Link } from "gatsby"
 
 const jumpeach = () => {
   return (
-    <Layout>
+    <>
       <SEO title="JUMPEACH" />
+      <GlobalStyle />
+
       <JumpeachContainer>
-        <Heading>JUMPEACH</Heading>
+        <Heading>
+          <Link to="/">
+            <IoIosArrowBack
+              css={`
+                font-size: 2.5rem;
+                margin-right: 1rem;
+                color: #fff;
+                transition: 1s;
+                &:hover {
+                  color: #6c6c6c;
+                  cursor: pointer;
+                }
+              `}
+            />
+          </Link>
+          JUMPEACH
+        </Heading>
         <GridContainer>
           <GameContainer>
             <iframe
@@ -24,7 +45,6 @@ const jumpeach = () => {
               height="590"
             />
           </GameContainer>
-
           <InstructionContainer>
             <div>
               <h4>
@@ -43,7 +63,9 @@ const jumpeach = () => {
           </InstructionContainer>
         </GridContainer>
       </JumpeachContainer>
-    </Layout>
+
+      <Footer />
+    </>
   )
 }
 
@@ -59,6 +81,7 @@ const JumpeachContainer = styled.div`
   background-color: #161616;
 `
 const Heading = styled.div`
+  color: #fff;
   text-align: start;
   padding-left: 4rem;
   margin-bottom: 4rem;

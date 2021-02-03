@@ -26,6 +26,7 @@ const Contact = ({ name }) => {
             font-size: 3.5rem;
             margin: 1rem;
             color: #fff;
+            transition: 1s;
             &:hover {
               color: #96d1ea;
               transform: translateY(-2px);
@@ -62,6 +63,7 @@ const Contact = ({ name }) => {
                 css={`
                   margin: 1rem;
                   color: #fff;
+                  transition: 1s;
                   &:hover {
                     color: #96d1ea;
                     transform: translateY(-2px);
@@ -75,6 +77,7 @@ const Contact = ({ name }) => {
                 css={`
                   margin: 1rem;
                   color: #fff;
+                  transition: 1s;
                   &:hover {
                     color: #96d1ea;
                     transform: translateY(-2px);

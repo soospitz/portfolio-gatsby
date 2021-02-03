@@ -1,15 +1,35 @@
 import React from "react"
-import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
 import Video from "../assets/videos/motion.mp4"
+import Footer from "../components/Footer"
+import { GlobalStyle } from "../components/styles/GlobalStyles"
+import { IoIosArrowBack } from "react-icons/io"
+import { Link } from "gatsby"
 
 const motionGraphic = () => {
   return (
-    <Layout>
+    <>
       <SEO title="Motion" />
+      <GlobalStyle />
       <MotionGraphicContainer>
-        <Heading>Motion Graphic Project</Heading>
+        <Heading>
+          <Link to="/">
+            <IoIosArrowBack
+              css={`
+                font-size: 2.5rem;
+                margin-right: 1rem;
+                color: #fff;
+                transition: 1s;
+                &:hover {
+                  color: #6c6c6c;
+                  cursor: pointer;
+                }
+              `}
+            />
+          </Link>
+          Motion Graphic Project
+        </Heading>
         <VideoContainer
           src={Video}
           type="video/mp4"
@@ -19,7 +39,8 @@ const motionGraphic = () => {
           muted
         />
       </MotionGraphicContainer>
-    </Layout>
+      <Footer/>
+    </>
   )
 }
 

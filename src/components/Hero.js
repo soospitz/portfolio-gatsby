@@ -91,7 +91,7 @@ const Hero = () => {
             alt={data.allHeroDataJson.edges[3].node.alt}
             fluid={data.allHeroDataJson.edges[3].node.img.childImageSharp.fluid}
           />
-          <ContactIcons>
+          {/* <ContactIcons>
             <ButtonMailto
               label="Write me an E-Mail"
               mailto="mailto:soospitz@gmail.com"
@@ -123,7 +123,7 @@ const Hero = () => {
                 `}
               />
             </Link>
-          </ContactIcons>
+          </ContactIcons> */}
           
         </ImgContent>
       </HeroContent>
@@ -179,7 +179,7 @@ const OuterImg = styled(Img)`
     animation-play-state: paused;
   }
   @media screen and (max-width: 280px) {
-    margin-left: -20px;
+   
     
   }
 `
